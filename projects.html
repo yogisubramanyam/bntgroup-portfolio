@@ -5,15 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Work — Yogi Subramanyam Naragani</title>
   <meta name="description" content="Client applications delivered end to end — HRMS platform rebuild, applicant tracking system, driving school app, and project management app, built with Angular, Node.js, and MongoDB." />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230e2233'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23e0b45a' font-family='Georgia'%3EY%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f1115'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%2322d3ee' font-family='monospace' font-weight='bold'%3EY%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=3" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <script>
+  (function () {
+    var t;
+    try { t = localStorage.getItem("theme"); } catch (e) {}
+    if (t !== "light" && t !== "dark") {
+      t = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    }
+    document.documentElement.setAttribute("data-theme", t);
+  })();
+  </script>
+  <link rel="stylesheet" href="assets/styles.css?v=5" />
   <link rel="canonical" href="https://bntgroup.info/projects.html" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Yogi Subramanyam Naragani" />
-  <meta name="theme-color" content="#0e2233" />
+  <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f5f7fa" media="(prefers-color-scheme: light)" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Yogi Naragani — BNT" />
   <meta property="og:title" content="Work — Yogi Subramanyam Naragani" />
@@ -44,11 +55,19 @@
         <a href="resume.html">Resume</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <div class="header-right">
+        <!-- TODO: replace YOUR_GITHUB with real profile -->
+        <a class="icon-link" href="https://github.com/YOUR_GITHUB" aria-label="GitHub profile"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+        <!-- TODO: replace YOUR_LINKEDIN with real profile -->
+        <a class="icon-link" href="https://www.linkedin.com/in/YOUR_LINKEDIN" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+        <button class="theme-toggle" aria-label="Switch theme"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75zM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0zM18.9 6.16a.75.75 0 0 0-1.06-1.06l-1.59 1.59a.75.75 0 1 0 1.06 1.06l1.59-1.59zM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75zM17.84 18.9a.75.75 0 0 0 1.06-1.06l-1.59-1.59a.75.75 0 1 0-1.06 1.06l1.59 1.59zM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18zM7.76 17.25a.75.75 0 0 0-1.06-1.06L5.1 17.78a.75.75 0 0 0 1.06 1.06l1.6-1.59zM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12zM6.16 5.1a.75.75 0 0 0-1.06 1.06l1.59 1.59a.75.75 0 0 0 1.06-1.06L6.16 5.1z"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.75 14.01A9.72 9.72 0 0 1 12.28 21a9.75 9.75 0 0 1-2.3-19.23.75.75 0 0 1 .85 1.03 7.5 7.5 0 0 0 9.9 9.9.75.75 0 0 1 1.02.86 9.6 9.6 0 0 1-.0.45z"/></svg></button>
+      </div>
     </div>
   </header>
 
   <section class="page-hero">
     <div class="container">
+      <p class="term-line"><span class="prompt">$</span> git log --projects<span class="term-cursor">▊</span></p>
       <h1>Work &amp; services.</h1>
       <p>Real applications I've built and rebuilt for clients — and what I can build for you.</p>
     </div>
@@ -62,6 +81,8 @@
         <p>Client projects built end to end — frontend, backend, database, and deployment.</p>
       </div>
       <div class="card project">
+        <div class="win-bar" aria-hidden="true"><span class="win-dot"></span><span class="win-dot"></span><span class="win-dot"></span><span class="win-name">hrms-rebuild.md</span><span class="status-chip"><span class="status-dot"></span>shipped</span></div>
+        <div class="project-body">
         <div class="project-top">
           <div class="icon">👥</div>
           <div>
@@ -97,9 +118,12 @@
           </div>
         </div>
         <div class="tags"><span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Full rebuild</span></div>
+        </div>
       </div>
 
       <div class="card project">
+        <div class="win-bar" aria-hidden="true"><span class="win-dot"></span><span class="win-dot"></span><span class="win-dot"></span><span class="win-name">ats-platform.md</span><span class="status-chip"><span class="status-dot"></span>shipped</span></div>
+        <div class="project-body">
         <div class="project-top">
           <div class="icon">📋</div>
           <div>
@@ -134,9 +158,12 @@
           </div>
         </div>
         <div class="tags"><span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Pipelines &amp; workflows</span></div>
+        </div>
       </div>
 
       <div class="card project">
+        <div class="win-bar" aria-hidden="true"><span class="win-dot"></span><span class="win-dot"></span><span class="win-dot"></span><span class="win-name">driving-school.app</span><span class="status-chip"><span class="status-dot"></span>shipped</span></div>
+        <div class="project-body">
         <div class="project-top">
           <div class="icon">🚗</div>
           <div>
@@ -171,9 +198,12 @@
           </div>
         </div>
         <div class="tags"><span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Scheduling &amp; bookings</span></div>
+        </div>
       </div>
 
       <div class="card project">
+        <div class="win-bar" aria-hidden="true"><span class="win-dot"></span><span class="win-dot"></span><span class="win-dot"></span><span class="win-name">pm-tool.md</span><span class="status-chip"><span class="status-dot"></span>shipped</span></div>
+        <div class="project-body">
         <div class="project-top">
           <div class="icon">🗂</div>
           <div>
@@ -208,6 +238,7 @@
           </div>
         </div>
         <div class="tags"><span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Tasks &amp; teams</span></div>
+        </div>
       </div>
     </div>
   </section>
@@ -274,16 +305,22 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span>© 2026 Yogi Subramanyam Naragani · bntgroup.info</span>
+      <div class="footer-left">
+        <span>© 2026 Yogi Subramanyam Naragani · bntgroup.info</span>
+        <span class="footer-note">built with plain html · css · js — no frameworks harmed</span>
+      </div>
       <div class="footer-links">
         <a href="about.html">About</a>
         <a href="projects.html">Work</a>
         <a href="resume.html">Resume</a>
         <a href="contact.html">Contact</a>
+        <a href="assets/Yogi-Naragani-Resume.pdf" download>Resume PDF</a>
+        <a class="icon-link" href="https://github.com/YOUR_GITHUB" aria-label="GitHub profile"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+        <a class="icon-link" href="https://www.linkedin.com/in/YOUR_LINKEDIN" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
       </div>
     </div>
   </footer>
 
-  <script src="assets/site.js?v=4"></script>
+  <script src="assets/site.js?v=5"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // ----- Theme toggle -----
   var themeBtn = document.querySelector(".theme-toggle");
   function applyThemeMeta(theme) {
-    var color = theme === "light" ? "#f5f7fa" : "#0f1115";
+    var color = theme === "light" ? "#f7f9fb" : "#0b1723";
     document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
       m.setAttribute("content", color);
     });

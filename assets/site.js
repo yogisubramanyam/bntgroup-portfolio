@@ -19,11 +19,15 @@ document.addEventListener("DOMContentLoaded", function () {
           io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    }, { threshold: 0, rootMargin: "0px 0px 12% 0px" });
     els.forEach(function (el, i) {
       el.classList.add("will-reveal");
       el.style.transitionDelay = (i % 4) * 70 + "ms";
       io.observe(el);
     });
+    // Safety net: never leave content hidden (e.g. observer quirks, printing)
+    setTimeout(function () {
+      els.forEach(function (el) { el.classList.add("revealed"); });
+    }, 3000);
   }
 });

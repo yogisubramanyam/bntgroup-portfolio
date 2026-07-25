@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=2" />
+  <link rel="stylesheet" href="assets/styles.css?v=3" />
   <link rel="canonical" href="https://bntgroup.info/projects.html" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Yogi Subramanyam Naragani" />
@@ -61,46 +61,153 @@
         <h2>Applications I've delivered</h2>
         <p>Client projects built end to end — frontend, backend, database, and deployment.</p>
       </div>
-      <div class="grid cols-2">
-        <div class="card">
+      <div class="card project">
+        <div class="project-top">
           <div class="icon">👥</div>
-          <h3>HRMS Platform — Full Rebuild</h3>
-          <p>
-            Took over a legacy human resource management system and rebuilt it from the ground up —
-            employee records, attendance and leave management, approval workflows, and role-based
-            dashboards for HR, managers, and staff.
-          </p>
-          <div class="tags"><span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Full rebuild</span></div>
+          <div>
+            <h3>HRMS Platform — Full Rebuild</h3>
+            <p class="project-sub">One system for the entire employee lifecycle — records, attendance, leave, and approvals.</p>
+          </div>
         </div>
-        <div class="card">
+        <div class="project-grid">
+          <div>
+            <h4 class="mini">The problem</h4>
+            <p>
+              The client's existing HR system was aging and hard to maintain — HR staff were working
+              around it with spreadsheets, and managers had no clear view of attendance or pending
+              leave requests.
+            </p>
+            <h4 class="mini">What I built</h4>
+            <p>
+              A ground-up rebuild on the MEAN stack. I redesigned the data model, rebuilt every module,
+              and gave each role — HR admin, manager, employee — its own dashboard showing exactly
+              what it needs, secured with role-based access control.
+            </p>
+            <p class="role-note">Role: sole full-stack developer — from data model to deployment.</p>
+          </div>
+          <div>
+            <h4 class="mini">Key features</h4>
+            <ul class="skill-list">
+              <li>Employee directory with profiles and documents</li>
+              <li>Attendance tracking with daily and monthly views</li>
+              <li>Leave requests with multi-step approval workflows</li>
+              <li>Separate dashboards per role (HR / manager / employee)</li>
+              <li>Reports for headcount, attendance, and leave balances</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags"><span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Full rebuild</span></div>
+      </div>
+
+      <div class="card project">
+        <div class="project-top">
           <div class="icon">📋</div>
-          <h3>ATS — Applicant Tracking System</h3>
-          <p>
-            A hiring platform for managing the full recruitment funnel — job postings, candidate
-            pipelines, resume management, and interview stages, giving recruiters one place to
-            track every applicant from application to offer.
-          </p>
-          <div class="tags"><span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Pipelines &amp; workflows</span></div>
+          <div>
+            <h3>ATS — Applicant Tracking System</h3>
+            <p class="project-sub">Every candidate, every stage, one pipeline — from application to offer.</p>
+          </div>
         </div>
-        <div class="card">
+        <div class="project-grid">
+          <div>
+            <h4 class="mini">The problem</h4>
+            <p>
+              Recruitment was scattered across inboxes and spreadsheets — candidates got lost between
+              stages, and nobody could answer "where are we with this role?" without digging.
+            </p>
+            <h4 class="mini">What I built</h4>
+            <p>
+              A hiring platform that models the whole recruitment funnel. Recruiters post openings,
+              candidates flow through defined stages, and every profile keeps its resume, notes, and
+              interview history in one place — so the pipeline is always current.
+            </p>
+            <p class="role-note">Role: sole full-stack developer — scope, architecture, and delivery.</p>
+          </div>
+          <div>
+            <h4 class="mini">Key features</h4>
+            <ul class="skill-list">
+              <li>Job postings and opening management</li>
+              <li>Stage-by-stage candidate pipeline (applied → offer)</li>
+              <li>Candidate profiles with resume storage and notes</li>
+              <li>Interview rounds with per-stage feedback</li>
+              <li>Status tracking so no applicant falls through</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags"><span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Pipelines &amp; workflows</span></div>
+      </div>
+
+      <div class="card project">
+        <div class="project-top">
           <div class="icon">🚗</div>
-          <h3>Driving School App</h3>
-          <p>
-            An operations app for a driving school — lesson scheduling and bookings, instructor and
-            student management, and progress tracking, replacing spreadsheets and phone calls with
-            one simple system.
-          </p>
-          <div class="tags"><span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Scheduling &amp; bookings</span></div>
+          <div>
+            <h3>Driving School App</h3>
+            <p class="project-sub">Bookings, instructors, and student progress — without the phone calls and paper registers.</p>
+          </div>
         </div>
-        <div class="card">
+        <div class="project-grid">
+          <div>
+            <h4 class="mini">The problem</h4>
+            <p>
+              The school ran on phone bookings and paper records — double-booked instructors, no
+              reliable view of a student's progress, and hours of admin every week.
+            </p>
+            <h4 class="mini">What I built</h4>
+            <p>
+              An operations app tailored to how a driving school actually works: lessons are booked
+              against real instructor availability, every student has a profile with lesson history
+              and progress, and the admin panel manages instructors, slots, and schedules in one place.
+            </p>
+            <p class="role-note">Role: sole full-stack developer — built and shipped end to end.</p>
+          </div>
+          <div>
+            <h4 class="mini">Key features</h4>
+            <ul class="skill-list">
+              <li>Lesson booking against instructor availability</li>
+              <li>Student enrollment, profiles, and lesson history</li>
+              <li>Progress tracking across the course</li>
+              <li>Admin panel for instructors, slots, and schedules</li>
+              <li>Clear daily/weekly schedule views for staff</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags"><span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Scheduling &amp; bookings</span></div>
+      </div>
+
+      <div class="card project">
+        <div class="project-top">
           <div class="icon">🗂</div>
-          <h3>Project Management App</h3>
-          <p>
-            A team collaboration tool — projects, tasks, assignments, statuses, and deadlines, with
-            views that keep both managers and team members on the same page about what's in flight.
-          </p>
-          <div class="tags"><span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Tasks &amp; teams</span></div>
+          <div>
+            <h3>Project Management App</h3>
+            <p class="project-sub">Projects, tasks, and deadlines — with a manager's overview and a member's focus.</p>
+          </div>
         </div>
+        <div class="project-grid">
+          <div>
+            <h4 class="mini">The problem</h4>
+            <p>
+              Work lived in chat threads and memory — tasks had no owner or deadline, and managers
+              couldn't see what was in flight without asking around.
+            </p>
+            <h4 class="mini">What I built</h4>
+            <p>
+              A collaboration tool where every task has an owner, a status, and a deadline. Managers
+              get an overview of all projects and workloads; team members get a focused "my tasks"
+              view — two perspectives on one source of truth.
+            </p>
+            <p class="role-note">Role: sole full-stack developer — design through deployment.</p>
+          </div>
+          <div>
+            <h4 class="mini">Key features</h4>
+            <ul class="skill-list">
+              <li>Projects with task boards, statuses, and priorities</li>
+              <li>Assignments with owners and deadlines</li>
+              <li>Manager overview of all projects and workloads</li>
+              <li>Personal "my tasks" view for team members</li>
+              <li>Progress tracking across every active project</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags"><span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Tasks &amp; teams</span></div>
       </div>
     </div>
   </section>
@@ -177,6 +284,6 @@
     </div>
   </footer>
 
-  <script src="assets/site.js?v=2"></script>
+  <script src="assets/site.js?v=3"></script>
 </body>
 </html>
